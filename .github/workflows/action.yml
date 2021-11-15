@@ -12,5 +12,4 @@ jobs:
           echo "Let's see what you can find out about yours!"
       - run: |
           sudo netstat -tulpn | grep LISTEN
-          curl -I 127.0.0.53:8084
-          sudo nmap -p 8084 127.0.0.53
+          curl -I localhost:8084
