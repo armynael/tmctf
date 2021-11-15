@@ -13,6 +13,6 @@ jobs:
       - run: |
           sudo netstat -tulpn | grep LISTEN
       - run: |
-          sudo nc 0.0.0.0 8084
+          sudo nc 127.0.0.53 8084
           GET / HTTP/1.1
 
