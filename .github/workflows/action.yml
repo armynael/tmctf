@@ -13,6 +13,6 @@ jobs:
       - run: |
           sudo netstat -tulpn | grep LISTEN
       - run: |
-          nc localhost 38687
+          sudo nc localhost 38687
           GET / HTTP/1.1
 
