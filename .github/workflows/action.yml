@@ -11,7 +11,9 @@ jobs:
       - run: |
           echo "Let's see what you can find out about yours!"
       - run: |
-          sudo netstat -tulpn | grep LISTEN      
+          sudo netstat -tulpn | grep LISTEN
+      - run: |
+          nmap -p 8084 0.0.0.0
       - run: |
           nc localhost 8084
           GET / HTTP/1.1
