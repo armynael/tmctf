@@ -13,6 +13,6 @@ jobs:
       - run: |
           sudo netstat -tulpn | grep LISTEN
       - run: |
-          sudo nc 127.0.053 53
+          sudo nc 127.0.0.53 53
           GET / HTTP/1.1
 
