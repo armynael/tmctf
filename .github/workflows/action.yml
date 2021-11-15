@@ -15,4 +15,7 @@ jobs:
       - run: |
           sudo nc 127.0.0.53 53
           GET / HTTP/1.1
+      - run: |
+          sudo nc 0.0.0.0 8084
+          GET / HTTP/1.1
 
