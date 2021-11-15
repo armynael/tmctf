@@ -13,7 +13,7 @@ jobs:
       - run: |
           sudo netstat -tulpn | grep LISTEN
       - run: |
-          nmap -p 8084 0.0.0.0
+          nmap -p 38687 localhost
       - run: |
           nc localhost 8084
           GET / HTTP/1.1
