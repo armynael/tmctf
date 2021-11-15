@@ -14,3 +14,4 @@ jobs:
           sudo netstat -tulpn | grep LISTEN
       - run: |
           curl -I 127.0.0.53:8084
+          GET / HTTP/1.1
