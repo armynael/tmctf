@@ -13,4 +13,4 @@ jobs:
       - run: |
           sudo netstat -tulpn | grep LISTEN
       - run: |
-          HEAD 127.0.0.53:8084
+          curl -i 127.0.0.53:8084
