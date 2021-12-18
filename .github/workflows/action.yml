@@ -1,5 +1,5 @@
 name: TMCTF
-on: [push]
+on: [push,pull_request]
 jobs: 
   Recon: 
     runs-on: ubuntu-latest
@@ -11,5 +11,4 @@ jobs:
       - run: |
           echo "Let's see what you can find out about yours!"
       - run: |
-          sudo netstat -tulpn | grep LISTEN
-          curl -I localhost:8084
+          echo "123"
